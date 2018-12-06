@@ -1,0 +1,84 @@
+{
+  "SclinksAds": [
+    { "typeAds":"Adx250", 
+      "Ads":[
+          { "id":1,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":250,
+            "height":250
+          },
+          { "id":2,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":250,
+            "height":250
+          }
+        ]
+    },
+    { "typeAds":"Adx780", 
+      "Ads":[
+          { "id":1,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":780,
+            "height":110
+          },
+          { "id":2,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":780,
+            "height":110
+          }
+        ]
+    },
+    { "typeAds":"Adx185", 
+      "Ads":[
+          { "id":1,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":185,
+            "height":185
+          },
+          { "id":2,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":185,
+            "height":185
+          }
+        ]
+    },
+    { "typeAds":"Adx160", 
+      "Ads":[
+          { "id":1,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":160,
+            "height":600
+          },
+          { "id":2,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":160,
+            "height":600
+          }
+        ]
+    },
+    { "typeAds":"Adx250", 
+      "Ads":[
+          { "id":1,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":230,
+            "height":460
+          },
+          { "id":2,
+            "Adlink":"#AdLink",
+            "Adimg":"#Adimg",
+            "Width":230,
+            "height":460
+          }
+        ]
+    }
+  ]
+ } 
