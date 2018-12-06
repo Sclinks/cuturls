@@ -37,39 +37,39 @@ function verifieInfo(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2
 if(linkShortedval != null)
 {
 //verifie PostInfo
-if(linkimg == null)
+if(linkimg == null || typeof linkimg === "undefined")
 {
 linkimg = "#ImgNotfoundLink" ;
-console.log("#ERROR03: {Post Image : not found !}")
+console.warn("#ERROR03: {Post Image : not found !}")
 }
-else if(linktitle == null)
+else if(linktitle == null || typeof linktitle === "undefined")
 {
 linktitle = "Your link will be processed here !";
-console.log("#ERROR04: {Post Title : not found !}")
+console.warn("#ERROR04: {Post Title : not found !}")
 }
 
 //verifie Ad1Info
-if(ad1link == null)
+if(ad1link == null || typeof ad1link === "undefined")
 {
 ad1link = "#MyAd1Link" ;
-console.log("#ERROR05: {Ad1Link : not found !}")
+console.warn("#ERROR05: {Ad1Link : not found !}")
 }
-else if(ad1img == null)
+else if(ad1img == null || typeof ad1img === "undefined")
 {
 ad1img = "https://bit.ly/2E1NpIk";
-console.log("#ERROR06: {Ad1Image : not found !}")
+console.warn("#ERROR06: {Ad1Image : not found !}")
 }
 
 //verifie Ad2Info
-if(ad2link == null)
+if(ad2link == null || typeof ad2link === "undefined")
 {
 ad2link = "#MyAd2Link" ;
-console.log("#ERROR07: {Ad2Link : not found !}")
+console.warn("#ERROR07: {Ad2Link : not found !}")
 }
-else if(ad2img == null)
+else if(ad2img == null || typeof ad2img === "undefined")
 {
 ad2img = "https://bit.ly/2E1NpIk";
-console.log("#ERROR08: {Ad2Image : not found !}")
+console.warn("#ERROR08: {Ad2Image : not found !}")
 }
 
 creatPost(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img);
@@ -77,7 +77,7 @@ creatPost(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img);
 }
 else
 {
-console.log("#ERROR02: {Shoted Link : not found !}");
+console.warn("#ERROR02: {Shoted Link : not found !}");
 $(".post-body div").attr("style","display:none;").html("");
 }
 }
