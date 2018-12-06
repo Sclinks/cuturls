@@ -105,7 +105,6 @@ $(".post-body div").attr("style","display:none;").html("");
 }
 }
 
-
 function creatPost(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img)
 {
 var cdaud = new Audio();
