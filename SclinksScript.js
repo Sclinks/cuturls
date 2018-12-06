@@ -29,7 +29,7 @@ verifieInfo(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img);
 else
 {
 console.warn("#ERROR01: {div#newPost : not found !}")
-//window.location.href = "/p/accueil.html";
+$(".post-body div").attr("style","display:none;").html("");
 }
 
 function verifieInfo(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img)
@@ -78,7 +78,7 @@ creatPost(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img);
 else
 {
 console.log("#ERROR02: {Shoted Link : not found !}");
-//window.location.href = "/p/accueil.html";
+$(".post-body div").attr("style","display:none;").html("");
 }
 }
 
@@ -93,7 +93,8 @@ var timerId = setInterval(countdown, 1000);
 
 //Clear Post Div  
 $('div#newPost').html("");
-
+$(".post-body div").html("").append($("<div>").attr("id","newPost"));
+  
 //Creat list for ads
 $("<ul>").attr({"id":"postBod","class": "styleAds1"}).appendTo('#newPost');
 
