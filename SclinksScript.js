@@ -99,8 +99,8 @@ $(".post-body div").html("").append($("<div>").attr("id","newPost"));
 $("<ul>").attr({"id":"postBod","class": "styleAds1"}).appendTo('#newPost');
 
 //Add Ad1 to list
-$("<li>").appendTo('ul#postBod').append( $("<a>").attr({"id":"Ads8","href": ad1link+""}));
-$("<img>").attr("src",ad1img+"").appendTo('a#Ads8');
+$("<li>").appendTo('ul#postBod').append( $("<a>").attr({"id":"Ads8","href": ad1link}));
+$("<img>").attr("src",ad1img).appendTo('a#Ads8');
 
 /*Add LinkShorted & her infos to list*/
 
@@ -108,9 +108,9 @@ $("<li>").attr({"id":"sclink","style":"background: transparent url("+linkimg+") 
 $("li#sclink").append($("<p>").attr("id","postitle").text(linktitle));
 $("li#sclink").append($("<a>").attr("id","linkShorted"));
 
-//Add Ad1 to list
-$("<li>").appendTo('ul#postBod').append( $("<a>").attr({"id":"Ads9","href": ad2link+""}));
-$("<img>").attr("src",ad2img+"").appendTo('a#Ads9');
+//Add Ad2 to list
+$("<li>").appendTo('ul#postBod').append( $("<a>").attr({"id":"Ads9","href": ad2link}));
+$("<img>").attr("src",ad2img).appendTo('a#Ads9');
 
 $("<span>").attr("class","icon-spin4 animate-spin").appendTo("a#linkShorted");
 $("<span>").attr("id","Timer").appendTo("a#linkShorted");
