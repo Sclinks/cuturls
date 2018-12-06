@@ -47,7 +47,19 @@ else if(linktitle == null || typeof linktitle === "undefined")
 linktitle = "Your link will be processed here !";
 console.warn("#ERROR04: {Post Title : not found !}")
 }
-
+if(ad1link === ad1img)
+{
+  ad1link = null;
+  ad1img = null;
+  console.warn("#ERROR09: {Ad1Link : Image link and ad link are similar!}")
+}
+  
+if(ad2link === ad2img)
+{
+  ad2link = null;
+  ad2img = null;
+  console.warn("#ERROR09: {Ad1Link : Image link and ad link are similar!}")
+}
 //verifie Ad1Info
 if(ad1link == null || typeof ad1link === "undefined")
 {
