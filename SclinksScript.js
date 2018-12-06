@@ -32,8 +32,16 @@ console.warn("#ERROR01: {div#newPost : not found !}")
 $(".post-body div").attr("style","display:none;").html("");
 }
 
+//Function virifieInfo
 function verifieInfo(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img)
 {
+  
+if(linkimg === linkShortedval)
+{
+  linkShortedval = null;
+  console.warn("#ERROR10: {LinkShorted: Image link and ad link are similar!}")
+}
+  
 if(linkShortedval != null)
 {
 //verifie PostInfo
@@ -42,7 +50,8 @@ if(linkimg == null || typeof linkimg === "undefined")
 linkimg = "#ImgNotfoundLink" ;
 console.warn("#ERROR03: {Post Image : not found !}")
 }
-else if(linktitle == null || typeof linktitle === "undefined")
+
+if(linktitle == null || typeof linktitle === "undefined")
 {
 linktitle = "Your link will be processed here !";
 console.warn("#ERROR04: {Post Title : not found !}")
@@ -58,7 +67,7 @@ if(ad2link === ad2img)
 {
   ad2link = null;
   ad2img = null;
-  console.warn("#ERROR09: {Ad1Link : Image link and ad link are similar!}")
+  console.warn("#ERROR09: {Ad2Link : Image link and ad link are similar!}")
 }
 //verifie Ad1Info
 if(ad1link == null || typeof ad1link === "undefined")
@@ -66,7 +75,8 @@ if(ad1link == null || typeof ad1link === "undefined")
 ad1link = "#MyAd1Link" ;
 console.warn("#ERROR05: {Ad1Link : not found !}")
 }
-else if(ad1img == null || typeof ad1img === "undefined")
+
+if(ad1img == null || typeof ad1img === "undefined")
 {
 ad1img = "https://bit.ly/2E1NpIk";
 console.warn("#ERROR06: {Ad1Image : not found !}")
@@ -78,7 +88,8 @@ if(ad2link == null || typeof ad2link === "undefined")
 ad2link = "#MyAd2Link" ;
 console.warn("#ERROR07: {Ad2Link : not found !}")
 }
-else if(ad2img == null || typeof ad2img === "undefined")
+
+if(ad2img == null || typeof ad2img === "undefined")
 {
 ad2img = "https://bit.ly/2E1NpIk";
 console.warn("#ERROR08: {Ad2Image : not found !}")
