@@ -39,7 +39,7 @@ function verifieInfo(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2
 if(linkimg === linkShortedval)
 {
   linkShortedval = null;
-  console.warn("#ERROR10: {LinkShorted: Image link and ad link are similar!}")
+  console.warn("#ERROR08: {LinkShorted: Image link and ad link are similar!}")
 }
   
 if(linkShortedval != null)
@@ -61,48 +61,35 @@ if(ad1link === ad1img)
 {
   ad1link = null;
   ad1img = null;
-  console.warn("#ERROR09: {Ad1Link : Image link and ad link are similar!}")
+  console.warn("#ERROR07: {Ad1Link : Image link and ad link are similar!}")
 }
   
 if(ad2link === ad2img)
 {
   ad2link = null;
   ad2img = null;
-  console.warn("#ERROR09: {Ad2Link : Image link and ad link are similar!}")
+  console.warn("#ERROR07: {Ad2Link : Image link and ad link are similar!}")
 }
 //verifie Ad1Info
-if(ad1link == null || typeof ad1link === "undefined")
+if(ad1link == null || typeof ad1link === "undefined" || ad1img == null || typeof ad1img === "undefined")
 {
-ad1link = "#MyAd1Link" ;
-console.warn("#ERROR05: {Ad1Link : not found !}")
+  ad1link = "#MyAd1Link" ;
+  ad1img = "https://bit.ly/2E1NpIk";
+  console.warn("#ERROR05: {Ad1Link OR Ad1Image : not found !}")
 }
-
-if(ad1img == null || typeof ad1img === "undefined")
-{
-ad1img = "https://bit.ly/2E1NpIk";
-console.warn("#ERROR06: {Ad1Image : not found !}")
-}
-
 //verifie Ad2Info
-if(ad2link == null || typeof ad2link === "undefined")
+if(ad2link == null || typeof ad2link === "undefined" || ad2img == null || typeof ad2img === "undefined")
 {
-ad2link = "#MyAd2Link" ;
-console.warn("#ERROR07: {Ad2Link : not found !}")
+  ad2link = "#MyAd2Link" ;
+  ad2img = "https://bit.ly/2E1NpIk";
+  console.warn("#ERROR06: {Ad2Link OR Ad2Image : not found !}")
 }
-
-if(ad2img == null || typeof ad2img === "undefined")
-{
-ad2img = "https://bit.ly/2E1NpIk";
-console.warn("#ERROR08: {Ad2Image : not found !}")
-}
-
 creatPost(ad1link,ad1img,linkShortedval,linkimg,linktitle,ad2link,ad2img);
-
 }
 else
 {
-console.warn("#ERROR02: {Shoted Link : not found !}");
-$(".post-body div").attr("style","display:none;").html("");
+  console.warn("#ERROR02: {Shoted Link : not found !}");
+  $(".post-body div").attr("style","display:none;").html("");
 }
 }
 
