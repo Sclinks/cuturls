@@ -47,15 +47,16 @@ if(linkShortedval != null)
 //verifie PostInfo
 if(linkimg == null || typeof linkimg === "undefined")
 {
-linkimg = "#ImgNotfoundLink" ;
-console.warn("#ERROR03: {Post Image : not found !}")
+  linkimg = "#ImgNotfoundLink" ;
+  console.warn("#ERROR03: {Post Image : not found !}")
 }
 
 if(linktitle == null || typeof linktitle === "undefined")
 {
-linktitle = "Your link will be processed here !";
-console.warn("#ERROR04: {Post Title : not found !}")
+  linktitle = "Your link will be processed here !";
+  console.warn("#ERROR04: {Post Title : not found !}")
 }
+  
 if(ad1link === ad1img)
 {
   ad1link = null;
